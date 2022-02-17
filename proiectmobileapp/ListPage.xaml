@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:proiectmobileapp"
+             x:Class="proiectmobileapp.ListPage">
+    <ContentPage.Content  xmlns:local="clr-namespace: proiectmobileapp">
+        <StackLayout>
+        
+        </StackLayout>
+        
+    </ContentPage.Content>
+    <StackLayout Margin="20">
+        <Editor Placeholder="Titlul cartii"
+ Text="{Binding Titlu}"
+ HeightRequest="100">
+            <Editor.Behaviors>
+                <local:ValidationBehaviour />
+            </Editor.Behaviors>
+        </Editor>
+        <Editor Placeholder="Numele autorului "
+ Text="{Binding Autor}"
+ HeightRequest="100" >
+            <Editor.Behaviors>
+                <local:ValidationBehaviour />
+            </Editor.Behaviors>
+        </Editor>
+        <Editor Placeholder="Gen "
+ Text="{Binding Gen}"
+ HeightRequest="100">
+            <Editor.Behaviors>
+                <local:ValidationBehaviour />
+            </Editor.Behaviors>
+        </Editor>
+        <Editor Placeholder="Descriere "
+ Text="{Binding Descriere}"
+ HeightRequest="100">
+            <Editor.Behaviors>
+                <local:ValidationBehaviour />
+            </Editor.Behaviors>sitory
+        </Editor>
+        
+
+      
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Button Text="Save"
+ Clicked="OnSaveButtonClicked" />
+            <Button Grid.Column="1"
+ Text="Delete"
+ Clicked="OnDeleteButtonClicked"/>
+        </Grid>
+    </StackLayout>
+</ContentPage>

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="proiectmobileapp.Menu">
+    <ContentPage.Content>
+        <StackLayout>
+            
+            
+            <Button Text="Adauga/Editeaza carti "
+                AbsoluteLayout.LayoutBounds="100, 10, 200, 5" 
+                HorizontalOptions="Center"
+                VerticalOptions="CenterAndExpand"
+                Clicked="OnC" />
+
+            <Button Text="Vizualizare carti"
+            
+                    HorizontalOptions="Center"
+                     VerticalOptions="CenterAndExpand"
+                 AbsoluteLayout.LayoutBounds="100, 10, 200, 5"
+                Clicked="Vizualizare" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

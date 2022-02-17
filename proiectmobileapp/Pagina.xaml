@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="proiectmobileapp.Pagina">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical" BindableLayout.ItemsSource="{Binding Carti}" Padding="15" Spacing="15">
+
+            <Label Text="{Binding Titlu}" FontSize="45"  ></Label>
+            <Label Text="{Binding Autor}" FontSize="30"   ></Label>
+            <Label Text="{Binding Gen}" FontSize="30"   />
+            <Label Text="{Binding Descriere}" FontSize="30"  ></Label>
+          
+         
+        </StackLayout>
+
+    </ContentPage.Content>
+    
+    
+</ContentPage>
